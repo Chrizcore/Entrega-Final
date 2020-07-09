@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+          <!-- Tabs Titles -->
+          <h2 class="active">Sing in with Your Phone Number</h2>
+      
+          <!-- Icon -->
+          <div class="fadeIn first">
+            <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" />
+          </div>
+      
+          <!-- Login Form -->
+          <!--<input  [(ngModel)]="phoneNumber.number" class="form-control" placeholder=" 4491234554" aria-label="Username" aria-describedby="basic-addon1"  maxlength="10" minlength="10">-->
+          <div>
+            <input type="text" [(ngModel)]="phoneNumber.number" class="input" placeholder="5555" maxlength="10">
+            <label for="lada"> Complete the captcha bellow</label>
+            <div class="text-center"><div class="g-recaptcha" id="recaptcha-container"></div></div>
+            <input (click)="sendLoginCode()" type="button" class="fadeIn fourth" value="send code">
+            <div class="text-center row" *ngIf="error">
+                <div class="col-10 alert alert-danger">Error {{this.error}}</div>
+            </div> 
+            <button type="submit" (click)="sendLoginCode()" class="fadeIn fourth" value="Send Code" *ngIf="error"></button>
+            <div *ngIf="windowRef.confirmationResult">
+                <label for="code">Introduzca el Codigo: </label><br>
+                <input type="text" name="code" [(ngModel)]="verificationCode" class="input">
+                <input (click)="verifyLoginCode()" type="button" class="fadeIn fourth" value="verify">
+            </div>
+        </div>
+      
+          <!-- Remind Passowrd -->
+          <div id="formFooter">
+            <a class="underlineHover" (click)="registrer()">Register Here</a>
+          </div>
+      
+        </div>
+      </div>    
+</div>

@@ -1,0 +1,64 @@
+<div class="container mt-5">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
+  </head>
+  <h3>CODIGOS DISPONIBLES</h3>
+  <body>
+    <br>
+    <br>
+  <div class="container" *ngFor="let code of value">
+    <div class="card">
+      <h3 class="title">Descuentos</h3>
+      <div class="bar">
+        <div class="emptybar"></div>
+        <div class="filledbar"></div>
+      </div>
+      <div class="circle">
+        <p class="ofertas">{{value[0].code}}</p>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <circle class="stroke" cx="60" cy="60" r="50"/>
+      </svg>
+      </div>
+    </div>
+    <div class="card">
+      <h3 class="title">Veterano?</h3>
+      <div class="bar">
+        <div class="emptybar"></div>
+        <div class="filledbar"></div>
+      </div>
+      <div class="circle">
+        <p class="ofertas">{{value[1].code}}</p>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <circle class="stroke" cx="60" cy="60" r="50"/>
+      </svg>
+      </div>
+    </div>
+    <div class="card">
+      <h3 class="title">Eres nuevo?</h3>
+      <div class="bar">
+        <div class="emptybar"></div>
+        <div class="filledbar"></div>
+      </div>
+      <div class="circle">
+        <p class="ofertas">{{value[2].code}}</p>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <circle class="stroke" cx="60" cy="60" r="50"/>
+      </svg>
+      </div>
+    </div>
+    <div class="card">
+      <h3 class="title">Envio Gratis</h3>
+      <div class="bar">
+        <div class="emptybar"></div>
+        <div class="filledbar"></div>
+      </div>
+      <div class="circle">
+        <p class="ofertas">{{value[3].code}}</p>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <circle class="stroke" cx="60" cy="60" r="50"/>
+      </svg>
+      </div>
+    </div>
+  </div>
+  </body>
+</div>

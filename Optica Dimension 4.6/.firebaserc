@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ejemplo-angular-9": {
+      "hosting": {
+        "proyect": [
+          "ejemplo-angular-9"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>DIMENSION</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/3e7247904b.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playball&family=Sriracha&family=Suez+One&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Neuton:ital@1&display=swap" rel="stylesheet">
+  <script src = "node_modules / chart.js / src / chart.js"> </script>
+</head>
+
+<body>
+  <script src = "node_modules / chart.js / src / chart.js"> </script>
+  <app-root></app-root>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+    <!--Accesibilidada solo lee la pantalla-->
+    <script>
+      function Menu(band) {
+
+        if(band==1){
+          console.log("Si entra");
+        var utterance = new SpeechSynthesisUtterance();
+        utterance.text = 'Numero uno: home, numero dos: contacto, numero tres: Acerca de nosotros, numero cuatro: Preguntas Frecuentes, Iniciar Sesion';
+        speechSynthesis.speak(utterance);
+        console.log("Voy pasando la prueba");  
+        }
+        if(band==2){
+          speechSynthesis.pause();
+          console.log("si entra en el if No. 2");
+       
+        }
+        if(band==3){
+            speechSynthesis.resume();
+            console.log("si entra en el if No. 3");
+        }
+        if(band==4){
+          speechSynthesis.cancel();
+          console.log("si entra en el if No. 4");
+        }
+
+        console.log("esto es band: ", band);
+      }
+    </script>
+  
+    <script>
+      
+      function Home(band) {
+        if(band==1){
+          console.log("Si entra"); //<------------------------
+            var utterance = new SpeechSynthesisUtterance();
+            utterance.text = 'Agenta tu cita ya con nosotros. #Quedate en casa.  Armazon versache: Con un diseño vanguardista versace nos enamora con este nuevo modelo.   Armazon Monblack: Sin duda un diseño que no desepciona podriamos decir que es la vieja confiable.    Armazon RayBan: Sin duda con estas gafas nunca estaras fuera de moda ';
+            speechSynthesis.speak(utterance);
+            utterance.text = '¿Quienes somos? Somos una clinica socialmente responsable en donde nos preocupamos por nuestros clientes,nuestra vida es servir con gusto y actitud para intentar mejorar la vide de nuestros clientes.  Redes sociales:   Facebook, Instagram.   Informacion de contacto: Santa Anita Aguascalientes #321. Numero Telefonico: 449 324 23 23 Correo: dimension@gamil.com';
+            speechSynthesis.speak(utterance);
+            console.log("Voy pasando la prueba"); //<-------------   
+           
+
+        }
+        if(band==2){
+          speechSynthesis.pause();
+          console.log("si entra en el if No. 2");
+       
+        }
+        if(band==3){
+            speechSynthesis.resume();
+            console.log("si entra en el if No. 3");
+        }
+        if(band==4){
+          speechSynthesis.cancel();
+          console.log("si entra en el if No. 4");
+        }
+
+        console.log("esto es band: ", band);
+  
+      }
+
+    </script>
+  
+    <script>
+      function Contacto(band) {
+
+
+        if(band==1){
+          console.log("Si entra"); //<------------------------
+        var utterance = new SpeechSynthesisUtterance();
+        utterance.text = 'Escribe tu: Nombre, Correo y Telefono.   Escriba su mensaje.   Enviar';
+        speechSynthesis.speak(utterance);
+        utterance.text = '¿Quienes somos? Somos una clinica socialmente responsable en donde nos preocupamos por nuestros clientes,nuestra vida es servir con gusto y actitud para intentar mejorar la vide de nuestros clientes.  Redes sociales:   Facebook, Instagram.   Informacion de contacto: Santa Anita Aguascalientes #321. Numero Telefonico: 449 324 23 23 Correo: dimension@gamil.com';
+        speechSynthesis.speak(utterance);
+        console.log("Voy pasando la prueba"); //<-------------
+        }
+        if(band==2){
+          speechSynthesis.pause();
+          console.log("si entra en el if No. 2");
+       
+        }
+        if(band==3){
+            speechSynthesis.resume();
+            console.log("si entra en el if No. 3");
+        }
+        if(band==4){
+          speechSynthesis.cancel();
+          console.log("si entra en el if No. 4");
+        }
+
+        console.log("esto es band: ", band);
+
+
+
+      }
+    </script>
+  
+    <script>
+      function AcercaDe(band) {
+
+
+        if(band==1){
+          console.log("Si entra"); //<------------------------
+        var utterance = new SpeechSynthesisUtterance();
+        utterance.text = 'Acerca de Optica Dimensión.   Optica dimension es una clinica y proveedor líder a nivel estatal de examenes de la vista, micas y armazones, puesto que con mucho esfuerzo y sacrificio conseguimos en solo 2 años. La visión de optica dimensión no solo es ser lider a nivel estatal si no convertirse en el líder mundial de proveedor de micas y armazones, aparte de ser reconocido mundialmente por su excelente servicio al cliente, Nuestros 12,000 profesionales alrededor del estado trabajan estrechamente con nuestros clientes y están comprometidos a mejorar la calidad de vida de los mismos todos los días. En 2016, las ventas netas de Valmet fueron de aproximadamente 200 mil dolares. Las acciones de Optica dimensión se cotizan en Nasdaq Helsinki y la sede de la empresa está ubicada en Aguascalientes, México.';
+        speechSynthesis.speak(utterance);
+        utterance.text = '¿Quienes somos? Somos una clinica socialmente responsable en donde nos preocupamos por nuestros clientes,nuestra vida es servir con gusto y actitud para intentar mejorar la vide de nuestros clientes.  Redes sociales:   Facebook, Instagram.   Informacion de contacto: Santa Anita Aguascalientes #321. Numero Telefonico: 449 324 23 23 Correo: dimension@gamil.com';
+        speechSynthesis.speak(utterance);
+        console.log("Voy pasando la prueba"); //<-------------
+        }
+        if(band==2){
+          speechSynthesis.pause();
+          console.log("si entra en el if No. 2");
+       
+        }
+        if(band==3){
+            speechSynthesis.resume();
+            console.log("si entra en el if No. 3");
+        }
+        if(band==4){
+          speechSynthesis.cancel();
+          console.log("si entra en el if No. 4");
+        }
+
+        console.log("esto es band: ", band);
+      }
+    </script>
+  
+    <script>
+      function PreguntasF(band) {
+
+        if(band==1){
+          console.log("Si entra"); //<------------------------
+        var utterance = new SpeechSynthesisUtterance();
+        utterance.text = 'Preguntas Frecuentes:  Aqui encontrara rapidamente algunas respuestas a las preguntas más comunes de nuestros clientes.    ¿Mi cita es totalmente valida si la hago en su página web?: Es totalmente valida su cita, no tenga miedo a probar nuevas tecnologias.   ¿Es dificil hacer una cita por su página web?: Para nada es incluso más sencillo y rapido, ademas se ahorrara la molestia de estar llamando por telefono';
+        speechSynthesis.speak(utterance);
+        utterance.text = '¿Quienes somos? Somos una clinica socialmente responsable en donde nos preocupamos por nuestros clientes,nuestra vida es servir con gusto y actitud para intentar mejorar la vide de nuestros clientes.  Redes sociales:   Facebook, Instagram.   Informacion de contacto: Santa Anita Aguascalientes #321. Numero Telefonico: 449 324 23 23 Correo: dimension@gamil.com';
+        speechSynthesis.speak(utterance);
+        speechSynthesis
+        console.log("Voy pasando la prueba"); //<-------------
+        }
+        if(band==2){
+          speechSynthesis.pause();
+          console.log("si entra en el if No. 2");
+       
+        }
+        if(band==3){
+            speechSynthesis.resume();
+            console.log("si entra en el if No. 3");
+        }
+        if(band==4){
+          speechSynthesis.cancel();
+          console.log("si entra en el if No. 4");
+        }
+
+        console.log("esto es band: ", band);
+      }
+    </script>
+</body>
+
+</html>

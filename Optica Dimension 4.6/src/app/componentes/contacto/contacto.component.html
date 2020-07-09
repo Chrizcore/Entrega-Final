@@ -1,0 +1,95 @@
+<body class="animated fadeIn">
+
+    <form #loginForm2="ngForm" (ngSubmit)="sendMail(loginForm2)">
+        <br><br>
+        <h3 class="pi"> <i class="fas fa-assistive-listening-systems fa-lg"><a href="javascript:void(0);" 
+            class="offdec" id="Accesibilidad"  onclick="Contacto(1)">Active accesibilidad,
+            </a></i>
+            <i  style="margin-left: 20px;"><a href="javascript:void(0);" 
+            class="offdec" id="Accesibilidad"  onclick="Contacto(2)" style="margin-right: 5px;">Pause,
+            </a></i>
+            <i  style="margin-left: 20px;"><a href="javascript:void(0);" 
+            class="offdec" id="Accesibilidad"  onclick="Contacto(3)" style="margin-right: 5px;">Ranude,
+            </a></i>
+            <i  style="margin-left: 20px;"><a href="javascript:void(0);" 
+            class="offdec" id="Accesibilidad"  onclick="Contacto(4)" style="margin-right: 5px;">O Detenga la Accesibilidad
+            </a></i>
+        </h3>
+
+        <form (ngSubmit)="contactForm(form.value)" class="div" #form="ngForm">
+            <h2>Contacto</h2>
+            <input ngModel #nombre="ngModel" type="text" name="nombre" placeholder="Tu nombre" >
+
+            <input ngModel #email="ngModel" name="email" type="email" class="form-control" id="exampleInputEmail1"
+                aria-describedby="emailHelp" placeholder="Tu correo">
+
+            <input ngModel #subject="ngModel" type="text" class="form-control" name="asunto" placeholder="Asunto">
+
+            <textarea ngModel #text="ngModel" name="text" id="text" name="mensaje"
+                placeholder="Escriba su mensaje"></textarea>
+
+            <button type="submit" class="btn btn-primary">Enviar</button> 
+            <button type="reset" class="btn btn-primary sep">Limpiar</button>
+
+        </form>
+        <br>
+    </form>
+
+</body>
+
+<footer class="marfooter animated fadeIn">
+    <div class="container-full">
+
+        <div class="container-body">
+            <div class="colum1">
+                <h1>¿Quienes Somos?</h1>
+                <p>
+                    Somos una clinica socialmente responsable en donde nos preocupamos
+                    por nuestros clientes,nuestra vida es servir con gusto y actitud para
+                    intentar mejorar la vide de nuestros clientes.
+                </p>
+            </div>
+
+            <div class="colum2">
+                <h1>Redes sociales</h1>
+                <div>
+
+                    <i class="fab fa-facebook fa-lg "> <a href="javascript:void(0);" class="offdec"> Siguenos en
+                            Facebook </a> </i><br>
+                    <i class="fab fa-instagram fa-lg margini"> <a href="javascript:void(0);" class="offdec"> Siguenos en
+                            Instagram</a></i>
+
+                </div>
+            </div>
+
+            <div class="colum3">
+                <h1>Informacion de contacto</h1>
+                <div>
+
+                    <i class="fas fa-warehouse fa-lg "><a class="offdec" href="javascript:void(0);"> Santanita,
+                            Aguascalientes #321</a>
+                    </i><br>
+                    <i class="fas fa-mobile-alt fa-lg margini "> <a href="javascript:void(0);" class="offdec"> 449 324
+                            2323</a> </i><br>
+                    <i class="far fa-envelope  fa-lg margini "> <a href="javascript:void(0);" class="offdec">
+                            dimension@gmail.com</a></i>
+
+                </div>
+            </div>
+        </div>
+        <!--Final del conatinerbody-->
+
+    </div>
+    <!--Final del conatiner-full-->
+
+    <div class="container-footer">
+        <div class="copyr">
+            @2020 Todos los derechos reservados | <a href="javascript:void(0);">Equipo Angular</a>
+        </div>
+
+        <div class="info">
+            <a href="javascript:void(0);">Politicas de privaciadad</a> | <a href="javascript:void(0);">Terminos y
+                condiciones</a>
+        </div>
+    </div>
+</footer>

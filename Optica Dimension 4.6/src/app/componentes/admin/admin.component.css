@@ -1,0 +1,9 @@
+.mglobal2{
+    margin-left: 200px;
+}
+body{ 
+    background-image: url(../../../assets/img/F1.webp) ;
+    background-size: 100vw 100vh;
+    margin: 0;
+    color: white;
+}

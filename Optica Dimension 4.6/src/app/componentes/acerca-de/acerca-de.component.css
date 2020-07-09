@@ -1,0 +1,26 @@
+.pbody  {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    font-family: 'Sriracha', cursive;    
+}
+.hbody{
+    font-family: 'Suez One', serif;  
+}
+body{ 
+    background-image: url(../../../assets/img/f3.jpg) ;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+/*responsive*/
+@media(max-width:640px){
+    .imgO,.pbody{
+        width: 100%;
+    }
+}

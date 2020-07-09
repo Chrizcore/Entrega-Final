@@ -1,0 +1,50 @@
+body{ 
+    background-image: url(../../../assets/img/f2.jpg) ;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'Sriracha', cursive;
+}
+.titulo{
+    font-family: 'Suez One', serif;
+}
+.div{
+    width: 450px;
+    margin: auto;
+    background: rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+h2{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+.sep{
+    margin-left: 260px;
+}
+
+/*responsive*/
+@media(max-width:680px){
+    .div{
+        width: 100%;
+    }
+}

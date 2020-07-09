@@ -1,0 +1,13 @@
+body{ 
+    background-image: url(../../../assets/img/f2.jpg) ;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+}
+.color{
+    color: white;
+    
+}
+.tam{
+    font-family: 'Suez One', serif; 
+}

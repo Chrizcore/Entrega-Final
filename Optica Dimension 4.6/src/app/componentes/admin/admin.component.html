@@ -1,0 +1,99 @@
+<body class="animated fadeIn">
+    <div class="jumbotron jumbotron-fluid color" style="background:transparent !important">
+        <div class="container">
+            <h1 class="display-3 tam">Bienvenido {{user?.displayName}}</h1> <!--Aqui va el nombre del usuario-->
+            <p class="lead">Aqui podras realizar la consulta de sus citas 
+                e incluso solicitar un diagrama.
+            </p>
+        </div>
+    </div>
+    <div class="row mglobal2">
+        <div class="col-6">
+            <div class="card text-white bg-primary mb-3 d-inline-block" style="max-width: 20rem;">
+                <div class="card-header">Alta </div>
+                <div class="card-body">
+                    <h4 class="card-title">De de alta una cita</h4>
+                    <p class="card-text">Aqui podra dar de alta las citas personalmente.
+                    </p>
+                    <button type="button" routerLink="" (click)="alta()" class="btn btn-light btn-block">Alta</button><!--de aqui te mandaria a hacer la consulta a la db-->
+                    <!--deje el routerlink listo para que cuando se presione el boton se vaya al componente que hara la alta a la base de datos-->
+                </div>    
+            </div>
+
+        </div>
+        <div class="col-6">
+            <div class="card text-white bg-primary mb-3 d-inline-block" style="max-width: 20rem;">
+                <div class="card-header">Consulta</div>
+                <div class="card-body">
+                    <h4 class="card-title">Consultar una grafica de barras</h4>
+                    <p class="card-text">
+                        Aqui podra consultar un grafico.
+                    </p>
+                    <button type="button" routerLink="/my-bar-chart" class="btn btn-light btn-block">Graficas</button><!--de aqui se mandaria a hacer la consuta de las graficas que nos enseño moy-->
+                    <!--deje el routerlink listo para que cuando se presione el boton se vaya al componente que hara la consulta a la base de datos-->
+                </div>
+            </div>
+        </div>
+
+    </div><!--Fin del row-->
+    <br><br>
+    <footer class="marfooter animated fadeIn">
+        <div class="container-full">
+
+            <div class="container-body">
+                <div class="colum1">
+                    <h1>¿Quienes Somos?</h1>
+                    <p>
+                        Somos una clinica socialmente responsable en donde nos preocupamos
+                        por nuestros clientes,nuestra vida es servir con gusto y actitud para
+                        intentar mejorar la vide de nuestros clientes.
+                    </p>
+                </div>
+
+                <div class="colum2">
+                    <h1>Redes sociales</h1>
+                    <div>
+
+                        <i class="fab fa-facebook fa-lg "><a href="javascript:void(0);" class="offdec"> Siguenos en
+                                Facebook
+                            </a> </i><br>
+                        <i class="fab fa-instagram fa-lg margini"> <a href="javascript:void(0);" class="offdec">
+                                Siguenos en
+                                Instagram</a></i>
+
+                    </div>
+                </div>
+
+                <div class="colum3">
+                    <h1>Informacion de contacto</h1>
+                    <div>
+
+                        <i class="fas fa-warehouse fa-lg "><a class="offdec" href="javascript:void(0);"> Santanita,
+                                Aguascalientes #321</a>
+                        </i><br>
+                        <i class="fas fa-mobile-alt fa-lg margini "> <a href="javascript:void(0);" class="offdec"> 449
+                                324
+                                2323</a> </i><br>
+                        <i class="far fa-envelope  fa-lg margini "> <a href="javascript:void(0);" class="offdec">
+                                dimension@gmail.com</a></i>
+
+                    </div>
+                </div>
+            </div>
+            <!--Final del conatinerbody-->
+
+        </div>
+        <!--Final del conatiner-full-->
+
+        <div class="container-footer">
+            <div class="copyr">
+                @2020 Todos los derechos reservados | <a href="javascript:void(0);">Edgar</a>
+            </div>
+
+            <div class="info">
+                <a href="javascript:void(0);">Politicas de privaciadad</a> | <a href="javascript:void(0);">Terminos y
+                    condiciones</a>
+            </div>
+        </div>
+    </footer>
+</body>
